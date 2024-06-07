@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.4.6)
 include($ENV{ROS_ROOT}/core/rosbuild/rosbuild.cmake)
-
+add_compile_options(-std=c++14)
 rosbuild_init()
 
 IF(NOT ROS_BUILD_TYPE)
